@@ -1,0 +1,163 @@
+.Footer {
+  background-color: #20426c;
+  color: white;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: grid;
+  justify-content: center;
+  grid-gap: 3rem;
+}
+
+.txt {
+  text-decoration: none;
+}
+
+.top {
+  text-align: center;
+}
+.footer-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer-subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.address {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.middle {
+  display: grid;
+
+  justify-content: center;
+}
+
+.lines {
+  width: 200px;
+  height: 1px;
+  background-color: white;
+  border: none;
+  margin: 10px auto;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.name {
+  margin-top: 5px;
+}
+
+.item {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 7px 10px;
+  cursor: pointer;
+}
+
+/* .item:hover {
+  font-weight: 500;
+  transition: ease 1s all;
+} */
+
+.menu {
+  margin: 1px auto;
+
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+/* .small-line {
+  height: 0px;
+
+  width: 0px;
+  margin: 0 auto;
+  visibility: hidden;
+} */
+.item {
+  color: #fff;
+
+  text-decoration: none;
+  /* letter-spacing: 0.15em; */
+
+  display: inline-block;
+  /* background-color: thistle; */
+  display: inline-block;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.item:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  border: none;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.4s ease 0s, left 0.4s ease 0s;
+  width: 0;
+}
+
+.item:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* .menuBoc:hover > .small-line {
+  transition: all 0.5s linear;
+  visibility: visible;
+  height: 1.5px;
+  width: 100%;
+  background-color: white;
+  border: none;
+} */
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.icon > .MuiSvgIcon-root {
+  font-size: 2.1rem;
+}
+.icon:hover {
+  transform: scale(1.4);
+  transition: all 0.3s linear;
+}
+
+@media screen and (min-width: 1200px) {
+  .Footer {
+    display: flex;
+
+    flex: 30% 40% 30%;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+  }
+
+  .icon > .MuiSvgIcon-root {
+    font-size: 2.1rem;
+    margin: 1rem;
+  }
+  .menu {
+    display: flex;
+  }
+}

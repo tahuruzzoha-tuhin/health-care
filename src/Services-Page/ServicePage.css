@@ -1,0 +1,93 @@
+.Service-Page {
+  width: 100%;
+}
+.servicePage-title {
+  margin-bottom: 1rem;
+}
+:root {
+  --Iconcolour: #20426c;
+  --snow: #fffafa;
+}
+
+.intro-service {
+  background-color: #f8f8ff;
+}
+.para-a-a {
+  margin-top: 1.2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.3rem;
+}
+
+.para-b-b {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.cont {
+  display: grid;
+  justify-content: center;
+  /* align-items: center; */
+  /* place-items: center; */
+  grid-gap: 1rem;
+  width: 600px;
+  color: grey;
+}
+
+.Pop-box {
+  border: 1px solid gray;
+  padding: 2rem 2rem;
+  /* background-color: whitesmoke; */
+  background-color: #f8f8ff;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 10px;
+  transition: all 2s ease;
+}
+
+.detail-title {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: var(--Iconcolour);
+  font-weight: 600;
+}
+
+.detail {
+  margin-bottom: 1rem;
+}
+
+.detail-desc {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: grey;
+}
+
+.service-buttons {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: var(--Iconcolour);
+  font-weight: 600;
+  padding: 0.8rem;
+  background: #20426c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.service-buttons:hover {
+  background: #346eb4;
+  transition: all 1s ease;
+}
+
+.detail-a {
+  margin-top: 1em;
+}
+
+.lineService {
+  background: lightgray;
+  border: none;
+  width: 1000px;
+  height: 1px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

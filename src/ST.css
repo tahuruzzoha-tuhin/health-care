@@ -1,0 +1,60 @@
+:root {
+  --darkBlue: #14213d;
+  --altBlue: #19294d;
+  --darkYellow: #fca311;
+  --greyIsh: #e5e5e5;
+  --White: #ffffff;
+  --black: #000000;
+  --mainTransition: all 0.3s linear;
+  --Iconcolour: #20426c;
+  --Secondoption: #2c60a0;
+}
+
+.ls {
+  letter-spacing: 1px;
+}
+.width {
+  width: 85%;
+}
+.bold {
+  text-transform: bold;
+}
+
+.margin {
+  margin-bottom: 1.8rem;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.center {
+  margin: 1px auto;
+}
+
+.basic {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.pads {
+  padding: 2.5rem 2.5rem;
+}
+
+.font-title {
+  font-size: 2.2rem;
+  color: #20426c;
+  font-weight: 600;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.off {
+}

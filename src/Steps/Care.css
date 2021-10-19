@@ -1,0 +1,96 @@
+.Care {
+  margin:10px;
+  width: 80%;
+}
+
+.line-care {
+  display: flex;
+  place-items: center;
+  flex: 2% 80%;
+}
+.dot-care {
+  color: gray;
+}
+
+.p {
+  color: aquamarine;
+  text-align: left;
+  margin-right: 0px;
+}
+
+.hr-care {
+  display: grid;
+  place-items: center;
+  width: 200px;
+  height: 2px;
+  background: gray;
+  margin-left: 7px;
+}
+
+.abc {
+  font-size: 2.3rem;
+  text-align: left;
+
+  text-transform: capitalize;
+  color: #20426c;
+  font-weight: 600;
+}
+
+.num {
+  font-size: 2.5rem;
+  color: #20426c;
+  margin-right: 15px;
+}
+.one-step {
+  display: flex;
+}
+.steps {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.corr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5rem;
+  width: 700px;
+}
+.btn-b {
+  width: 60%;
+  background: skyblue;
+  padding: 1rem 0.5rem;
+  background: skyblue;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.btn-b:hover {
+  color: skyblue;
+  background: transparent;
+  border: 2.5px solid skyblue;
+  transition: var(--mainTransition);
+}
+@media screen and (min-width: 900px) {
+  .step-container {
+    display: flex;
+
+    flex: 40% 50%;
+  }
+
+  .content {
+    grid-gap: 2rem;
+  }
+  .corr {
+    text-align: left;
+    min-width: 200px;
+  }
+  .btn-b {
+    margin-top: 2.5rem;
+    width: 50%;
+  }
+}

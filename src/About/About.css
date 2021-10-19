@@ -1,0 +1,140 @@
+.About {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 3rem;
+  /* background: red; */
+}
+
+.ab {
+  font-size: 2.3rem;
+  text-align: left;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  color: #20426c;
+  font-weight: 500;
+}
+.para-a {
+  line-height: 1.5rem;
+  margin-right: 20px;
+}
+
+.vr {
+  width: 5px;
+  height: 50px;
+  background: gray;
+}
+.vr-b {
+  font-size: 1.8rem;
+  font-style: italic;
+  margin-left: 15px;
+  transform: translateY(0%);
+  transform: translateX(-1.2%);
+  display: flex;
+  place-items: center;
+}
+
+span {
+  display: flex;
+}
+
+.content {
+  display: grid;
+  justify-content: left;
+  grid-gap: 2rem;
+}
+
+.para-a {
+  text-align: left;
+  width: 700px;
+}
+.image {
+  height: 500px;
+  width: 600px;
+}
+
+/* .line-about {
+  display: flex;
+  text-align: left;
+}
+*/
+.line-about {
+  display: flex;
+  place-items: center;
+  flex: 2% 98%;
+}
+.dot-about {
+  color: gray;
+  margin-right: 5px;
+}
+.hr-about {
+  width: 200px;
+}
+
+.box {
+  margin: 0 auto;
+}
+
+.ahmed {
+  height: 2px;
+  background: gray;
+  border: none;
+}
+
+.middle-statement {
+  display: flex;
+  text-align: left;
+}
+
+.btn-a {
+  width: 50%;
+  background: skyblue;
+  padding: 1rem 0.5rem;
+  background: skyblue;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border-color: transparent;
+}
+
+.btn-a:hover {
+  color: skyblue;
+  background: transparent;
+  border-radius: 0.5rem;
+  outline: 2px solid skyblue;
+  transition: var(--mainTransition);
+}
+
+@media screen and (min-width: 800px) {
+  /* .ab {
+    display: flex;
+  } */
+  .box {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    flex: 50% 50%;
+  }
+
+  .content {
+    display: grid;
+    justify-content: left;
+    grid-gap: 2rem;
+  }
+
+  .ab-cont {
+    width: 500px;
+  }
+
+  .about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .para-a {
+    margin: 0 auto;
+  }
+}

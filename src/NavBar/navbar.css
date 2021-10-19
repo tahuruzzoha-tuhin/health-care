@@ -1,0 +1,232 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.i {
+  height: 120px;
+  width: 150px;
+}
+
+:root {
+  --darkBlue: #14213d;
+  --altBlue: #19294d;
+  --darkYellow: #fca311;
+  --greyIsh: #e5e5e5;
+  --White: #ffffff;
+  --black: #000000;
+  --mainTransition: all 0.3s linear;
+  --Iconcolour: #20426c;
+  --Secondoption: #2c60a0;
+}
+.Navbar {
+  /* position: -webkit-sticky; *//*Safari */
+  /* position: sticky; */
+  top: 0;
+  opacity: 1;
+  z-index: 1;
+  background: white;
+  opacity: 0.954;
+  width: 98%;
+  border-bottom: 1px solid gray;
+  box-shadow: rgb(224, 223, 223);
+}
+.caps {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.Navbar-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.logo-section {
+  display: flex;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: bold;
+  /* justify-content: center; */
+}
+
+.title-link {
+  font-size: 2rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(0px);
+  text-decoration: none;
+}
+.logo-title {
+  font-size: 2rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-10px);
+}
+
+.toggle-section {
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+.LINK {
+  text-decoration: none;
+}
+
+.menu-text {
+  margin-right: 5px;
+  font-size: 1rem;
+}
+.Menu-Box {
+  display: flex;
+  letter-spacing: 1px;
+  justify-content: center;
+  padding: 0.4rem 0.3rem;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Menu-Box:hover {
+  background-color: black;
+  border: 2px solid black;
+  color: whitesmoke;
+  transition: var(--mainTransition);
+}
+
+.toggle {
+  letter-spacing: 1px;
+
+  transition: all 1s ease;
+
+  height: 0;
+  overflow: hidden;
+  /* display: block; */
+}
+
+.middle-section-b {
+  display: none;
+  /* cursor: pointer; */
+
+  font-weight: 600;
+  font-size: 1.35rem;
+}
+.pages {
+  padding: 0.5rem 2rem;
+  transition: var(--mainTransition);
+  text-decoration: none;
+  /* letter-spacing: 0.15em; */
+
+  display: inline-block;
+  /* background-color: thistle; */
+  display: inline-block;
+  padding: 10px 15px;
+  position: relative;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.pages:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  border: none;
+  left: 50%;
+  position: absolute;
+  background: var(--Iconcolour);
+  transition: width 0.4s ease 0s, left 0.4s ease 0s;
+  width: 0;
+}
+
+.pages:hover:after {
+  width: 100%;
+  left: 0;
+  height: 2.5px;
+}
+
+.pages-a {
+  padding: 0.5rem 2rem;
+  transition: var(--mainTransition);
+  background: var(--greyIsh);
+  font-weight: 600;
+  font-size: 1.35rem;
+  display: block;
+}
+
+.pages-a:hover {
+  background: rgb(255, 255, 255);
+  transition: var(--mainTransition);
+}
+
+@media screen and (min-width: 491px) {
+  .Navbar-container {
+    display: flex;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .middle-section-b {
+    display: flex;
+    padding: 1rem 2rem;
+  }
+  .toggle-section {
+    display: none;
+  }
+}
+
+.Navbar-container {
+  overflow: hidden;
+  /* background-color: #333; */
+}
+
+/* Navbar links */
+
+/* Page content */
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* navBar */
+
+.item {
+  color: var(--Iconcolour);
+  text-decoration: none;
+  /* letter-spacing: 0.15em; */
+
+  display: inline-block;
+  /* background-color: thistle; */
+  display: inline-block;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.item:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  border: none;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.4s ease 0s, left 0.4s ease 0s;
+  width: 0;
+}
+
+.item:hover:after {
+  width: 100%;
+  left: 0;
+}
