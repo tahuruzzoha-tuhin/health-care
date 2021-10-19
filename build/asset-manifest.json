@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d094e68e.chunk.css",
+    "main.js": "/static/js/main.4e340758.chunk.js",
+    "main.js.map": "/static/js/main.4e340758.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4b9a842c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4b9a842c.js.map",
+    "static/js/2.2470eb0e.chunk.js": "/static/js/2.2470eb0e.chunk.js",
+    "static/js/2.2470eb0e.chunk.js.map": "/static/js/2.2470eb0e.chunk.js.map",
+    "static/js/3.bb2803f6.chunk.js": "/static/js/3.bb2803f6.chunk.js",
+    "static/js/3.bb2803f6.chunk.js.map": "/static/js/3.bb2803f6.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.d094e68e.chunk.css.map": "/static/css/main.d094e68e.chunk.css.map",
+    "static/js/2.2470eb0e.chunk.js.LICENSE.txt": "/static/js/2.2470eb0e.chunk.js.LICENSE.txt",
+    "static/media/404-error.9acb0289.jpg": "/static/media/404-error.9acb0289.jpg",
+    "static/media/PSW.291d5373.svg": "/static/media/PSW.291d5373.svg",
+    "static/media/care.5e8d2517.svg": "/static/media/care.5e8d2517.svg",
+    "static/media/hospitalcare.f875c18f.svg": "/static/media/hospitalcare.f875c18f.svg",
+    "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg",
+    "static/media/mealprep.b56434f5.svg": "/static/media/mealprep.b56434f5.svg",
+    "static/media/medication.c3928446.svg": "/static/media/medication.c3928446.svg",
+    "static/media/nurse.f13d2f63.svg": "/static/media/nurse.f13d2f63.svg",
+    "static/media/sweeping.eedfedb9.svg": "/static/media/sweeping.eedfedb9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4b9a842c.js",
+    "static/js/2.2470eb0e.chunk.js",
+    "static/css/main.d094e68e.chunk.css",
+    "static/js/main.4e340758.chunk.js"
+  ]
+}
