@@ -12,37 +12,56 @@ import ProcessPage from './Process-Page/Process-Page'
 import { BrowserRouter as Router, Switch, Route }
   from 'react-router-dom';
 import NotFound from './Steps/Notfound/NotFound';
+import AuthProvider from './contexts/AuthProvider';
+import userEvent from '@testing-library/user-event';
+import useAuth from './Hooks/useAuth';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
+import Details from './Details/Details';
 
 
 
-function App() {
+
+const App = () => {
+
+  // const { user, logOut } = useAuth();
   return (
     <div className="container">
 
-      <Router>
-        <Navbar className="navBar" />
+      <AuthProvider>
+        <Router>
+          <Navbar className="navBar" />
 
 
-        <Switch>
-          <Route exact path="/" component={MainPage}></Route>
-          <Route exact path="/mainpage" component={MainPage}></Route>
-          {/* <MainPage/> */}
-          <Route exact path="/contact" component={ContactPage}></Route>
-          {/* <ContactPage/> */}
-          <Route exact path="/about" component={AboutPage}></Route>
-          {/* <AboutPage/> */}
+          <Switch>
+            <Route exact path="/" component={MainPage}></Route>
+            <Route exact path="/mainpage" component={MainPage}></Route>
+            {/* <MainPage/> */}
+            <Route exact path="/contact" component={ContactPage}></Route>
+            {/* <ContactPage/> */}
+            <Route exact path="/about" component={AboutPage}></Route>
+            {/* <AboutPage/> */}
 
-          <Route exact path="/services" component={ServicePage}></Route>
-          {/* <ServicePage/> */}
+            <Route exact path="/services" component={ServicePage}></Route>
+            {/* <ServicePage/> */}
 
-          <Route exact path="/process" component={ProcessPage}></Route>
-          <Route exact path="/login" component={Login}></Route>
-          <Route exact path="/process" component={Register}></Route>
-          <Route path="*" component={NotFound}></Route>
-          {/* <ServicePage/> */}
-        </Switch>
+            <Route exact path="/process" component={ProcessPage}></Route>
 
-      </Router>
+            {/* <Route exact path="/" component={MainPage}></Route> */}
+
+            <Route exact path="/login" component={Login}></Route>
+
+            <Route exact path="/register" component={Register}></Route>
+
+            <PrivateRoute path="/details" >
+              <Details></Details>
+            </PrivateRoute>
+
+            <Route path="*" component={NotFound}></Route>
+            {/* <ServicePage/> */}
+          </Switch>
+
+        </Router>
+      </AuthProvider>
     </div>
   );
 }

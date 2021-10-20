@@ -1,17 +1,22 @@
 import React from 'react';
+import { Link, Redirect } from 'react-router-dom';
+import useAuth from '../../Hooks/useAuth';
+// import useFirebase from '../../Hooks/useFirebase';
 import './Login.css'
 
 const Login = () => {
-    return (
-        <div>
-            <h2>Login Form</h2>
 
-            <form >
-                <div class="imgcontainer">
-                    <img src="img_avatar2.png" alt="Avatar" class="avatar" />
+    const { user, signInUsingGoogle } = useAuth();
+    return (
+        <div className="main">
+            <h2>Please Login Here!</h2>
+
+            <form onSubmit=""  >
+                <div className="imgcontainer">
+                    <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" className="avatar" />
                 </div>
 
-                <div class="container">
+                <div className="container">
                     <label for="uname"><b>Username</b></label>
                     <input type="text" placeholder="Enter Username" name="uname" required />
 
@@ -24,10 +29,17 @@ const Login = () => {
                     </label>
                 </div>
 
-                <div class="container" style="background-color:#f1f1f1">
-                    <button type="button" class="cancelbtn">Cancel</button>
-                    <span class="psw">Forgot <a href="#">password?</a></span>
+                {/* <Link to='/register'> */}
+                <div
+                    className="container"
+                    onClick={signInUsingGoogle}
+                >
+                    <span>  <button type="button" className="cancelbtn">Log In with Google {user.email ? <Redirect to="/"> </Redirect> : <Redirect to="/login"></Redirect>}</button> </span>
                 </div>
+                <div className="container">
+                    <Link to='/register'><button type="button" className="cancelbtn">Register with email</button></Link>
+                </div>
+                {/* </Link> */}
             </form>
 
         </div>

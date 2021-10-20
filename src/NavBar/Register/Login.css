@@ -26,13 +26,9 @@ button:hover {
 
 
 .cancelbtn {
-  text-decoration: none;
   width: auto;
   padding: 10px 18px;
-  background-color: #04AA6D;
-  color:#ccc;
-  font-size: 20px;
-  font-weight: 700;
+  background-color: #f44336;
 }
 
 .imgcontainer {

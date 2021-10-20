@@ -1,8 +1,16 @@
 .About {
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 3rem;
-  /* background: red; */
+  padding: 1rem;
+  margin-right: 20px;
+
+  /* display: grid;
+  justify-content: center;
+  align-items: center; */
+
+  margin: 15px 0 0 15px ;
+  width: 95%;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #f8f8ff;
 }
 
 .ab {
@@ -12,6 +20,7 @@
   text-transform: capitalize;
   color: #20426c;
   font-weight: 500;
+  margin-left: 15px;
 }
 .para-a {
   line-height: 1.5rem;
@@ -45,8 +54,10 @@ span {
 
 .para-a {
   text-align: left;
-  width: 700px;
+  width: 600px;
+  margin-left: 15px;
 }
+
 .image {
   height: 500px;
   width: 600px;
@@ -71,7 +82,8 @@ span {
 }
 
 .box {
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin: 15px 15px 0 0;
 }
 
 .ahmed {
@@ -96,6 +108,7 @@ span {
   cursor: pointer;
   border-radius: 0.5rem;
   border-color: transparent;
+  margin-left: 15px;
 }
 
 .btn-a:hover {

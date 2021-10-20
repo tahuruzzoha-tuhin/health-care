@@ -1,6 +1,7 @@
 const firebaseConfig = {
     apiKey: "AIzaSyAJLAtKXjZT0DsOQBpFgw-L4LeiYKvwU4k",
     authDomain: "fair-health.firebaseapp.com",
+    databaseURL: "https://fair-health-default-rtdb.asia-southeast1.firebasedatabase.app",
     projectId: "fair-health",
     storageBucket: "fair-health.appspot.com",
     messagingSenderId: "671496365494",

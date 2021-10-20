@@ -160,9 +160,9 @@ function ServicePage() {
                                     It’s a knowledge hub. Gather your knowledge about health hazard. Prominent doctors will write to let you know about complex health issues.
                                 </div>
 
-                                <Link to="/contact">
+                                <Link to="/details">
 
-                                    <button className="service-buttons">Get Started </button>
+                                    <button className="service-buttons">Get Details </button>
 
                                 </Link>
 
@@ -218,9 +218,9 @@ function ServicePage() {
                                 <div className="detail-desc">
                                     It’s a knowledge hub. Gather your knowledge about health hazard. Prominent doctors will write to let you know about complex health issues.
                                 </div>
-
-                                <button className="service-buttons">Get Started </button>
-
+                                <Link to="/details">
+                                    <button className="service-buttons">Get Details </button>
+                                </Link>
 
                             </article>
 
@@ -238,8 +238,8 @@ function ServicePage() {
                                     Fair Health is the first and largest innovative online healthcare startup, built with a mission
                                 </div>
 
-                                <Link to="/contact">
-                                    <button className="service-buttons">Get Started </button>
+                                <Link to="/details">
+                                    <button className="service-buttons">Get Details </button>
 
                                 </Link>
 
@@ -290,8 +290,8 @@ function ServicePage() {
                                     All of your medical records will be stored under one secured app. This is Bdcare, where you can store all of your medical documents without any risk. Only doctors who are appointed by you can access to see your records.
                                 </div>
 
-                                <Link to="contact">
-                                    <button className="service-buttons">Get Started </button>
+                                <Link to="/details">
+                                    <button className="service-buttons">Get Details </button>
 
 
                                 </Link>
@@ -344,9 +344,9 @@ function ServicePage() {
                                     It’s a knowledge hub. Gather your knowledge about health hazard. Prominent doctors will write to let you know about complex health issues.
                                 </div>
 
-                                <Link to="/contact">
+                                <Link to="/details">
 
-                                    <button className="service-buttons">Get Started </button>
+                                    <button className="service-buttons">Get Details </button>
 
                                 </Link>
 
@@ -393,8 +393,8 @@ function ServicePage() {
                                     Medical tests are organized & divided in smart packages which users can choose according to their needs.
                                 </div>
 
-                                <Link to="/contact">
-                                    <button className="service-buttons">Get Started </button>
+                                <Link to="/details">
+                                    <button className="service-buttons">Get Details </button>
 
                                 </Link>
 
@@ -444,8 +444,8 @@ function ServicePage() {
                                     Fair Health is the first and largest innovative online healthcare startup, built with a mission to create a “one-stop” healthcare platform
                                 </div>
 
-                                <Link to="/contact">
-                                    <button className="service-buttons">Get Started </button>
+                                <Link to="/details">
+                                    <button className="service-buttons">Get Details </button>
                                 </Link>
 
 
@@ -464,7 +464,7 @@ function ServicePage() {
 
             </div>
 
-            <Contact />
+            {/* <Contact /> */}
             <Footer />
         </div>
     )

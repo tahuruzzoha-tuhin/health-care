@@ -6,7 +6,6 @@ function Care() {
     return (
         <div className="Care">
 
-
             <div className="step-container">
                 <div className="image">
 
@@ -30,7 +29,7 @@ function Care() {
                     </div>
 
                     <div className="line-care p">
-                        Lorem ipsum dolor, sit amet
+                        We are technologically driven with all medical needs.
                     </div>
 
                     <div className="one-step">
@@ -74,7 +73,7 @@ function Care() {
                     </div>
                     <br />
 
-                    <Link to="/contact">
+                    <Link to="/login">
 
                         <button className="btn-b caps " type="submit ">
                             Schedule free assessment

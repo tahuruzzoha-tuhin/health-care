@@ -5,6 +5,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import { PlayCircleFilledWhite, Visibility } from '@material-ui/icons';
+// import useAuth from '../Hooks/useAuth';
+// import useFirebase from '../Hooks/useFirebase';
 import useAuth from '../Hooks/useAuth';
 
 
@@ -67,16 +69,23 @@ function Navbar() {
             <div className="pages">Process </div>
           </Link>
 
-          <Link className="LINK" className="LINK" style={navStyle} to='/contact'>
+          <Link className="LINK" style={navStyle} to='/contact'>
             <div className="pages">Contact </div>
           </Link>
-          {user?.email ? <Button>Logout</Button> : <Link className="LINK" className="LINK" style={navStyle} to='/login'>
-            <div className="pages">Login </div>
-          </Link>}
 
-          {user?.email ? <p>Hi! {user.displayName}</p> : <Link className="LINK" className="LINK" style={navStyle} to='/register'>
+          {
+            user.email ?
+
+              <button className="pages LINK logout" onClick={logOut}>Log out </button>
+              :
+              <Link className="LINK" className="LINK" style={navStyle} to='/login'>
+                <div className="pages">Login </div>
+              </Link>}
+          <p>{user.displayName}</p>
+
+          {/* <Link className="LINK" className="LINK" style={navStyle} to='/register'>
             <div className="pages">Register </div>
-          </Link>}
+          </Link> */}
 
 
         </div>
@@ -120,13 +129,13 @@ function Navbar() {
             <div className="pages-a">Contact </div>
           </Link>
 
-          {user?.email ? <Button>Logout</Button> : <Link className="LINK" className="LINK" style={navStyle} to='/login'>
+          <Link className="LINK" className="LINK" style={navStyle} to='/login'>
             <div className="pages">Login </div>
-          </Link>}
+          </Link>
 
-          {user?.email ? <p>Hi! {user.displayName}</p> : <Link className="LINK" className="LINK" style={navStyle} to='/register'>
+          {/* <Link className="LINK" className="LINK" style={navStyle} to='/register'>
             <div className="pages">Register </div>
-          </Link>}
+          </Link> */}
 
         </div> :
 
@@ -155,13 +164,13 @@ function Navbar() {
           <Link className="LINK" className="LINK" style={navStyle} to='/contact'>
             <div className="pages-a">Contact </div>
           </Link>
-          {user?.email ? <Button>Logout</Button> : <Link className="LINK" className="LINK" style={navStyle} to='/login'>
+          <Link className="LINK" className="LINK" style={navStyle} to='/login'>
             <div className="pages">Login </div>
-          </Link>}
+          </Link>
 
-          {user?.email ? <p>Hi! {user.displayName}</p> : <Link className="LINK" className="LINK" style={navStyle} to='/register'>
+          {/* <Link className="LINK" className="LINK" style={navStyle} to='/register'>
             <div className="pages">Register </div>
-          </Link>}
+          </Link> */}
 
         </div>
       }

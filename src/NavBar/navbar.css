@@ -7,6 +7,16 @@
 .i {
   height: 120px;
   width: 150px;
+  border-radius: 10px;
+  margin: 3px;
+  padding-bottom: 10px;
+}
+
+.logout{
+  border-radius: 10px;
+  margin-bottom: 50px;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 :root {
@@ -26,11 +36,12 @@
   top: 0;
   opacity: 1;
   z-index: 1;
-  background: white;
+  background: whitesmoke;
   opacity: 0.954;
-  width: 98%;
-  border-bottom: 1px solid gray;
-  box-shadow: rgb(224, 223, 223);
+  width: 100%;
+  /* border-bottom: 1px solid gray; */
+  /* box-shadow: rgb(224, 223, 223); */
+  margin-bottom: 15px;
 }
 .caps {
   text-transform: uppercase;

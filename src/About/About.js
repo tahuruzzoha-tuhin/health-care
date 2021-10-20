@@ -9,11 +9,6 @@ function About() {
 
         <div className="About">
 
-
-
-
-
-
             <div className="box">
 
 

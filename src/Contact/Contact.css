@@ -1,8 +1,22 @@
 .Contact {
-  margin: 2rem auto;
+  padding: 1rem;
+  margin-right: 20px;
+
+  /* display: grid;
+  justify-content: center;
+  align-items: center; */
+
+  margin: 15px 0 15px 15px ;
+  width: 95%;
+  border: 1px solid white;
+  border-radius: 10px;
   background-color: #f8f8ff;
 }
 
+.form-container{
+  margin: 90px;
+  /* border-radius: 10px; */
+}
 /* universal */
 
 .bold {
